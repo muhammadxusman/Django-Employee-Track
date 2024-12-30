@@ -54,7 +54,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',  # Add this line
 ]
+
 
 ROOT_URLCONF = 'employeetrack.urls'
 
@@ -85,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'employeetrack',
         'USER': 'root',
-        'PASSWORD': 'usman0336',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }
