@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'employeetrack',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'usman0336',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -113,6 +113,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': '1003326758613-t9qrn754cbpk2u8ql9404ji41tkmsdme.apps.googleusercontent.com',
+            'secret': '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',
+            'key': ''
+        }
+    }
+}
 
 
 AUTHENTICATION_BACKENDS = [
